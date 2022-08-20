@@ -1,0 +1,198 @@
+@font-face {
+    font-family: "Libre Franklin";
+    src: url("../assets/fonts/LibreFranklin-VariableFont_wght.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    margin: auto;
+    padding: 0 30px;
+    max-width: 700px;
+    text-align: center;
+    font-family: "Libre Franklin";
+}
+
+header {
+    margin-top: 85px;
+    margin-bottom: 60px;
+}
+
+header img {
+    width: 3.75rem;
+}
+
+.p-launch {
+    margin-bottom: 25px;
+    font-size: 45px;
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+}
+
+.p-launch strong {
+    font-weight: 700;
+    color: hsl(209, 33%, 12%);
+}
+
+.p-instructions {
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 300;
+    color: hsl(209, 33%, 12%);
+}
+
+.p-subscribe {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 65px;
+}
+
+.p-subscribe__email {
+    width: 420px;
+    height: 55px;
+    border: 1px solid #CFD2E1;
+    border-radius: 50px;
+    padding: 0 30px;
+    font-size: 15px;
+    color: hsl(209, 33%, 12%);
+    font-weight: 300;
+}
+
+.p-subscribe__email::placeholder {
+    color: #CFD2E1;
+}
+
+.p-subscribe__email--error {
+    border-color: hsl(354, 100%, 66%);
+}
+
+.p-subscribe__error-message {
+    color: hsl(354, 100%, 66%);
+    font-size: 12px;
+    font-style: italic;
+    text-align: left;
+    padding-left: 30px;
+    margin-top: 10px;
+    min-height: 15px;
+}
+
+.p-subscribe__btn {
+    width: 200px;
+    height: 55px;
+    border: none;
+    border-radius: 50px;
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.p-subscribe__btn:hover {
+    background-color: #7894EF;
+    cursor: pointer;
+}
+
+.p-illustration {
+    margin-bottom: 70px;
+}
+
+.p-illustration img {
+    width: 100%;
+}
+
+footer {
+    margin-bottom: 40px;
+}
+
+.p-socials {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.p-socials a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin: 0 6px;
+    border: 1px solid #F1F0F4;
+    border-radius: 50%;
+    color:hsl(223, 87%, 63%);
+    text-decoration: none;
+}
+
+.p-socials a:hover {
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+}
+
+.p-copyright {
+    color: hsl(0, 0%, 59%);
+    font-weight: 300;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 700px) {    
+    header {
+        margin-bottom: 45px;
+    }
+    
+    .p-launch {
+        margin-bottom: 25px;
+        font-size: 22px;
+    }
+    
+    .p-instructions {
+        margin-bottom: 35px;
+        font-size: 12px;
+    }
+    
+    .p-subscribe {
+        flex-direction: column;
+        padding: 0 15px;
+    }
+
+    .p-subscribe__email-container {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    
+    .p-subscribe__email {
+        width: 100%;
+        height: 40px;
+        font-size: 13px;
+    }
+    
+    .p-subscribe__error-message {
+        font-size: 12px;
+        text-align: center;
+        padding-left: 0;
+        min-height: auto;
+    }
+    
+    .p-subscribe__btn {
+        width: 100%;
+        height: 40px;
+        font-size: 13px;
+    }
+    
+    .p-illustration {
+        margin-bottom: 120px;
+    }
+    
+    .p-copyright {
+        font-size: 10px;
+    }
+}
